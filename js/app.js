@@ -393,8 +393,31 @@ function initHandoutsPage() {
     </div>`).join('');
 }
 
+const HANDOUT_FILES = {
+  'Algebra Formula Sheet':       'algebra-formula-sheet.pdf',
+  'Calculus Quick Reference':    'calculus-quick-reference.pdf',
+  'Geometry Proofs Cheat Sheet': 'geometry-proofs-cheatsheet.pdf',
+  'Trig Identities Reference':   'trig-identities-reference.pdf',
+  'Statistics Formula Sheet':    'statistics-formula-sheet.pdf',
+  'Physics Equations Card':      'physics-equations-card.pdf',
+  'Chemistry Periodic Trends':   'chemistry-periodic-trends.pdf',
+  'Stoichiometry Roadmap':       'stoichiometry-roadmap.pdf',
+  'Biology Cell Diagram':        'biology-cell-diagram.pdf',
+  'Genetics Problem Templates':  'genetics-problem-templates.pdf',
+  'Linear Algebra Cheatsheet':   'linear-algebra-cheatsheet.pdf',
+  'Number Theory Summary':       'number-theory-summary.pdf',
+  'Plate Tectonics Map Guide':   'plate-tectonics-map-guide.pdf',
+  'Astronomy Reference Card':    'astronomy-reference-card.pdf',
+  'Probability Cheatsheet':      'probability-cheatsheet.pdf',
+};
+
 function downloadHandout(title) {
-  alert(`"${title}" would download as a PDF. Connect your PDF hosting service (e.g., Amazon S3 or Cloudflare) to serve real files.`);
+  const file = HANDOUT_FILES[title];
+  if (!file) return;
+  const a = document.createElement('a');
+  a.href = `pdfs/${file}`;
+  a.download = file;
+  a.click();
 }
 
 /* ── RESOURCES PAGE ──────────────────────────────────────── */
