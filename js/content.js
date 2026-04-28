@@ -825,73 +825,73 @@ XA.resources = [
   {
     category: "Math", title: "Art of Problem Solving: Precalculus",
     desc: "Rigorous precalculus text widely used in math competitions and accelerated courses.",
-    price: "$34.99", stars: "★★★★★", icon: "📗", grade: "K-12",
-    asin: "B00F5A1UO8"
+    price: "~$35", stars: "★★★★★", icon: "📗", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Art+of+Problem+Solving+Precalculus&tag=toppicksmar03-20"
   },
   {
-    category: "Math", title: "Khan Academy — free companion",
-    desc: "Calculus (AP edition) practice workbook to complement online learning.",
-    price: "$18.99", stars: "★★★★☆", icon: "📘", grade: "K-12",
-    asin: "1544931781"
+    category: "Math", title: "AP Calculus Prep — Princeton Review",
+    desc: "Comprehensive AP Calculus AB & BC prep with full practice exams and strategies.",
+    price: "~$20", stars: "★★★★☆", icon: "📘", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Princeton+Review+AP+Calculus+Prep&tag=toppicksmar03-20"
   },
   {
     category: "Science", title: "Zumdahl Chemistry (AP Edition)",
     desc: "The definitive AP Chemistry textbook — clear explanations with quantitative rigor.",
-    price: "$89.00", stars: "★★★★★", icon: "📙", grade: "High School",
-    asin: "1305957601"
+    price: "~$89", stars: "★★★★★", icon: "📙", grade: "High School",
+    url: "https://www.amazon.com/s?k=Zumdahl+Chemistry+AP+Edition&tag=toppicksmar03-20"
   },
   {
-    category: "Science", title: "Halliday Resnick Physics Vol. 1",
-    desc: "Classic physics textbook used in college and AP Physics C courses.",
-    price: "$75.00", stars: "★★★★★", icon: "📕", grade: "High School",
-    asin: "0471320579"
+    category: "Science", title: "Fundamentals of Physics — Halliday & Resnick",
+    desc: "Classic physics textbook used in college and AP Physics C courses worldwide.",
+    price: "~$75", stars: "★★★★★", icon: "📕", grade: "High School",
+    url: "https://www.amazon.com/s?k=Halliday+Resnick+Fundamentals+of+Physics&tag=toppicksmar03-20"
   },
   {
     category: "Tools", title: "TI-84 Plus CE Graphing Calculator",
     desc: "The standard graphing calculator for SAT, ACT, AP exams, and algebra through calculus.",
-    price: "$116.00", stars: "★★★★★", icon: "🖩", grade: "K-12",
-    asin: "B00TFYYWQA"
+    price: "~$116", stars: "★★★★★", icon: "🖩", grade: "K-12",
+    url: "https://www.amazon.com/s?k=TI-84+Plus+CE+graphing+calculator&tag=toppicksmar03-20"
   },
   {
-    category: "Tools", title: "Scientific Calculator Casio fx-991EX",
+    category: "Tools", title: "Casio fx-991EX Scientific Calculator",
     desc: "Advanced scientific calculator with natural display, great for statistics and precalc.",
-    price: "$22.99", stars: "★★★★★", icon: "🔢", grade: "K-12",
-    asin: "B01LF2L7VS"
+    price: "~$23", stars: "★★★★★", icon: "🔢", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Casio+fx-991EX+scientific+calculator&tag=toppicksmar03-20"
   },
   {
-    category: "Technology", title: "iPad (9th Gen) for Students",
+    category: "Technology", title: "Apple iPad for Students",
     desc: "Ideal for annotating PDFs, using Desmos, and digital note-taking with Apple Pencil.",
-    price: "$329.00", stars: "★★★★★", icon: "📱", grade: "K-12",
-    asin: "B09G9BL5CP"
+    price: "~$329", stars: "★★★★★", icon: "📱", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Apple+iPad+student&tag=toppicksmar03-20"
   },
   {
     category: "Technology", title: "Apple Pencil (1st Generation)",
     desc: "Perfect for math handwriting recognition and annotating textbooks on iPad.",
-    price: "$89.00", stars: "★★★★★", icon: "✏️", grade: "K-12",
-    asin: "MK0C2AM/A"
+    price: "~$89", stars: "★★★★★", icon: "✏️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Apple+Pencil+1st+generation&tag=toppicksmar03-20"
   },
   {
-    category: "Math", title: "Linear Algebra Done Right (Axler)",
+    category: "Math", title: "Linear Algebra Done Right — Sheldon Axler",
     desc: "The best proof-based linear algebra book — used in top university courses.",
-    price: "$39.99", stars: "★★★★★", icon: "📗", grade: "College",
-    asin: "3319110799"
+    price: "~$40", stars: "★★★★★", icon: "📗", grade: "College",
+    url: "https://www.amazon.com/s?k=Linear+Algebra+Done+Right+Axler&tag=toppicksmar03-20"
   },
   {
     category: "Science", title: "Campbell Biology (AP Edition)",
     desc: "The gold standard biology textbook — comprehensive, visual, and exam-ready.",
-    price: "$79.00", stars: "★★★★★", icon: "📗", grade: "High School",
-    asin: "0134093410"
+    price: "~$79", stars: "★★★★★", icon: "📗", grade: "High School",
+    url: "https://www.amazon.com/s?k=Campbell+Biology+AP+Edition&tag=toppicksmar03-20"
   },
   {
-    category: "Tools", title: "Protractor & Compass Geometry Set",
+    category: "Tools", title: "Geometry Set — Compass & Protractor",
     desc: "Professional geometry tools for constructions, angles, and circle drawing.",
-    price: "$12.99", stars: "★★★★☆", icon: "📐", grade: "K-12",
-    asin: "B0752BBXPH"
+    price: "~$13", stars: "★★★★☆", icon: "📐", grade: "K-12",
+    url: "https://www.amazon.com/s?k=student+geometry+set+compass+protractor&tag=toppicksmar03-20"
   },
   {
-    category: "Technology", title: "Noise-Canceling Study Headphones",
-    desc: "Sony WH-1000XM5 — stay focused during study sessions with premium ANC.",
-    price: "$348.00", stars: "★★★★★", icon: "🎧", grade: "K-12",
-    asin: "B09XS7JWHH"
+    category: "Technology", title: "Sony WH-1000XM5 Noise-Canceling Headphones",
+    desc: "Stay focused during study sessions with industry-leading active noise cancellation.",
+    price: "~$348", stars: "★★★★★", icon: "🎧", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Sony+WH-1000XM5+headphones&tag=toppicksmar03-20"
   }
 ];
