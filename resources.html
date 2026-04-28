@@ -58,16 +58,20 @@
   <div class="container">
 
     <!-- Category tabs -->
-    <div class="tabs">
+    <div class="tabs" style="flex-wrap:wrap;">
       <button class="tab-btn active" data-tab="all-tab">All</button>
       <button class="tab-btn" data-tab="math-tab">Math Books</button>
       <button class="tab-btn" data-tab="science-tab">Science Books</button>
-      <button class="tab-btn" data-tab="tools-tab">Calculators</button>
+      <button class="tab-btn" data-tab="kits-tab">Science Kits</button>
+      <button class="tab-btn" data-tab="calc-tab">Calculators</button>
+      <button class="tab-btn" data-tab="plan-tab">Planners</button>
+      <button class="tab-btn" data-tab="stat-tab">Stationery</button>
       <button class="tab-btn" data-tab="tech-tab">Technology</button>
+      <button class="tab-btn" data-tab="setup-tab">Study Setup</button>
+      <button class="tab-btn" data-tab="post-tab">Posters</button>
     </div>
 
     <div class="tab-container">
-      <!-- All tab -->
       <div class="tab-panel active" data-panel="all-tab">
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="resourcesGrid"></div>
       </div>
@@ -77,11 +81,26 @@
       <div class="tab-panel" data-panel="science-tab">
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="sciResourcesGrid"></div>
       </div>
-      <div class="tab-panel" data-panel="tools-tab">
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="toolsResourcesGrid"></div>
+      <div class="tab-panel" data-panel="kits-tab">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="kitsResourcesGrid"></div>
+      </div>
+      <div class="tab-panel" data-panel="calc-tab">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="calcResourcesGrid"></div>
+      </div>
+      <div class="tab-panel" data-panel="plan-tab">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="planResourcesGrid"></div>
+      </div>
+      <div class="tab-panel" data-panel="stat-tab">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="statResourcesGrid"></div>
       </div>
       <div class="tab-panel" data-panel="tech-tab">
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="techResourcesGrid"></div>
+      </div>
+      <div class="tab-panel" data-panel="setup-tab">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="setupResourcesGrid"></div>
+      </div>
+      <div class="tab-panel" data-panel="post-tab">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;" id="postResourcesGrid"></div>
       </div>
     </div>
 
@@ -181,10 +200,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   renderCards(XA.resources, 'resourcesGrid');
-  renderCards(XA.resources.filter(r => r.category === 'Math'), 'mathResourcesGrid');
-  renderCards(XA.resources.filter(r => r.category === 'Science'), 'sciResourcesGrid');
-  renderCards(XA.resources.filter(r => r.category === 'Tools'), 'toolsResourcesGrid');
+  renderCards(XA.resources.filter(r => r.category === 'Math Books'), 'mathResourcesGrid');
+  renderCards(XA.resources.filter(r => r.category === 'Science Books'), 'sciResourcesGrid');
+  renderCards(XA.resources.filter(r => r.category === 'Science Kits'), 'kitsResourcesGrid');
+  renderCards(XA.resources.filter(r => r.category === 'Calculators'), 'calcResourcesGrid');
+  renderCards(XA.resources.filter(r => r.category === 'Planners'), 'planResourcesGrid');
+  renderCards(XA.resources.filter(r => r.category === 'Stationery'), 'statResourcesGrid');
   renderCards(XA.resources.filter(r => r.category === 'Technology'), 'techResourcesGrid');
+  renderCards(XA.resources.filter(r => r.category === 'Study Setup'), 'setupResourcesGrid');
+  renderCards(XA.resources.filter(r => r.category === 'Posters'), 'postResourcesGrid');
 });
 </script>
 </body>

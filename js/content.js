@@ -822,76 +822,502 @@ XA.handouts = [
 
 /* ── RESOURCES DATA (AFFILIATE) ─────────────────────────── */
 XA.resources = [
+
+  /* ── MATH BOOKS ─────────────────────────────────────────── */
   {
-    category: "Math", title: "Art of Problem Solving: Precalculus",
-    desc: "Rigorous precalculus text widely used in math competitions and accelerated courses.",
+    category: "Math Books", title: "Art of Problem Solving: Precalculus",
+    desc: "Rigorous precalculus text used in math competitions and accelerated high school courses.",
     price: "~$35", stars: "★★★★★", icon: "📗", grade: "K-12",
     url: "https://www.amazon.com/s?k=Art+of+Problem+Solving+Precalculus&tag=toppicksmar03-20"
   },
   {
-    category: "Math", title: "AP Calculus Prep — Princeton Review",
-    desc: "Comprehensive AP Calculus AB & BC prep with full practice exams and strategies.",
+    category: "Math Books", title: "AP Calculus Prep — Princeton Review",
+    desc: "Comprehensive AP Calculus AB & BC prep with full practice tests and step-by-step strategies.",
     price: "~$20", stars: "★★★★☆", icon: "📘", grade: "K-12",
     url: "https://www.amazon.com/s?k=Princeton+Review+AP+Calculus+Prep&tag=toppicksmar03-20"
   },
   {
-    category: "Science", title: "Zumdahl Chemistry (AP Edition)",
-    desc: "The definitive AP Chemistry textbook — clear explanations with quantitative rigor.",
-    price: "~$89", stars: "★★★★★", icon: "📙", grade: "High School",
-    url: "https://www.amazon.com/s?k=Zumdahl+Chemistry+AP+Edition&tag=toppicksmar03-20"
-  },
-  {
-    category: "Science", title: "Fundamentals of Physics — Halliday & Resnick",
-    desc: "Classic physics textbook used in college and AP Physics C courses worldwide.",
-    price: "~$75", stars: "★★★★★", icon: "📕", grade: "High School",
-    url: "https://www.amazon.com/s?k=Halliday+Resnick+Fundamentals+of+Physics&tag=toppicksmar03-20"
-  },
-  {
-    category: "Tools", title: "TI-84 Plus CE Graphing Calculator",
-    desc: "The standard graphing calculator for SAT, ACT, AP exams, and algebra through calculus.",
-    price: "~$116", stars: "★★★★★", icon: "🖩", grade: "K-12",
-    url: "https://www.amazon.com/s?k=TI-84+Plus+CE+graphing+calculator&tag=toppicksmar03-20"
-  },
-  {
-    category: "Tools", title: "Casio fx-991EX Scientific Calculator",
-    desc: "Advanced scientific calculator with natural display, great for statistics and precalc.",
-    price: "~$23", stars: "★★★★★", icon: "🔢", grade: "K-12",
-    url: "https://www.amazon.com/s?k=Casio+fx-991EX+scientific+calculator&tag=toppicksmar03-20"
-  },
-  {
-    category: "Technology", title: "Apple iPad for Students",
-    desc: "Ideal for annotating PDFs, using Desmos, and digital note-taking with Apple Pencil.",
-    price: "~$329", stars: "★★★★★", icon: "📱", grade: "K-12",
-    url: "https://www.amazon.com/s?k=Apple+iPad+student&tag=toppicksmar03-20"
-  },
-  {
-    category: "Technology", title: "Apple Pencil (1st Generation)",
-    desc: "Perfect for math handwriting recognition and annotating textbooks on iPad.",
-    price: "~$89", stars: "★★★★★", icon: "✏️", grade: "K-12",
-    url: "https://www.amazon.com/s?k=Apple+Pencil+1st+generation&tag=toppicksmar03-20"
-  },
-  {
-    category: "Math", title: "Linear Algebra Done Right — Sheldon Axler",
-    desc: "The best proof-based linear algebra book — used in top university courses.",
+    category: "Math Books", title: "Linear Algebra Done Right — Sheldon Axler",
+    desc: "The best proof-based linear algebra book — used in top university courses worldwide.",
     price: "~$40", stars: "★★★★★", icon: "📗", grade: "College",
     url: "https://www.amazon.com/s?k=Linear+Algebra+Done+Right+Axler&tag=toppicksmar03-20"
   },
   {
-    category: "Science", title: "Campbell Biology (AP Edition)",
-    desc: "The gold standard biology textbook — comprehensive, visual, and exam-ready.",
-    price: "~$79", stars: "★★★★★", icon: "📗", grade: "High School",
+    category: "Math Books", title: "Beast Academy Math (Grades 2–5)",
+    desc: "Art of Problem Solving's engaging comic-style math curriculum for elementary students.",
+    price: "~$25", stars: "★★★★★", icon: "📒", grade: "K-5",
+    url: "https://www.amazon.com/s?k=Beast+Academy+Math&tag=toppicksmar03-20"
+  },
+  {
+    category: "Math Books", title: "Saxon Math Homeschool Series",
+    desc: "Incremental, spiral math curriculum trusted by millions of students and homeschoolers.",
+    price: "~$45", stars: "★★★★☆", icon: "📙", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Saxon+Math+homeschool&tag=toppicksmar03-20"
+  },
+  {
+    category: "Math Books", title: "AMC 8 / AMC 10 Competition Prep",
+    desc: "Official past AMC competition problems — the best way to prep for math olympiad.",
+    price: "~$18", stars: "★★★★★", icon: "🏆", grade: "Middle School",
+    url: "https://www.amazon.com/s?k=AMC+math+competition+prep+book&tag=toppicksmar03-20"
+  },
+  {
+    category: "Math Books", title: "Statistics — Barron's AP Statistics",
+    desc: "Complete AP Statistics prep with concept review, practice exams, and free-response guidance.",
+    price: "~$22", stars: "★★★★☆", icon: "📊", grade: "High School",
+    url: "https://www.amazon.com/s?k=Barron%27s+AP+Statistics&tag=toppicksmar03-20"
+  },
+  {
+    category: "Math Books", title: "Introduction to Probability — Blitzstein & Hwang",
+    desc: "Harvard's probability textbook — intuitive explanations, real-world examples, free PDF companion.",
+    price: "~$55", stars: "★★★★★", icon: "🎲", grade: "College",
+    url: "https://www.amazon.com/s?k=Introduction+to+Probability+Blitzstein+Hwang&tag=toppicksmar03-20"
+  },
+
+  /* ── SCIENCE BOOKS ───────────────────────────────────────── */
+  {
+    category: "Science Books", title: "Zumdahl Chemistry (AP Edition)",
+    desc: "The definitive AP Chemistry textbook — clear explanations, rigorous problem sets.",
+    price: "~$89", stars: "★★★★★", icon: "⚗️", grade: "High School",
+    url: "https://www.amazon.com/s?k=Zumdahl+Chemistry+AP+Edition&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Books", title: "Fundamentals of Physics — Halliday & Resnick",
+    desc: "The classic physics textbook for AP Physics C and introductory college physics.",
+    price: "~$75", stars: "★★★★★", icon: "📕", grade: "High School",
+    url: "https://www.amazon.com/s?k=Halliday+Resnick+Fundamentals+of+Physics&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Books", title: "Campbell Biology (AP Edition)",
+    desc: "The gold standard biology textbook — comprehensive, visual, and AP exam-ready.",
+    price: "~$79", stars: "★★★★★", icon: "🧬", grade: "High School",
     url: "https://www.amazon.com/s?k=Campbell+Biology+AP+Edition&tag=toppicksmar03-20"
   },
   {
-    category: "Tools", title: "Geometry Set — Compass & Protractor",
-    desc: "Professional geometry tools for constructions, angles, and circle drawing.",
+    category: "Science Books", title: "The Feynman Lectures on Physics (3 Vols)",
+    desc: "Richard Feynman's legendary lecture series — the most insightful physics writing ever published.",
+    price: "~$55", stars: "★★★★★", icon: "🔬", grade: "College",
+    url: "https://www.amazon.com/s?k=Feynman+Lectures+on+Physics&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Books", title: "Conceptual Physics — Paul Hewitt",
+    desc: "Physics for conceptual thinkers — minimal math, maximum intuition. Great for 9th–10th grade.",
+    price: "~$65", stars: "★★★★★", icon: "💡", grade: "Middle School",
+    url: "https://www.amazon.com/s?k=Conceptual+Physics+Paul+Hewitt&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Books", title: "Organic Chemistry — Klein",
+    desc: "Student-friendly orgo textbook with a problem-solving approach and real-world applications.",
+    price: "~$85", stars: "★★★★★", icon: "🧪", grade: "College",
+    url: "https://www.amazon.com/s?k=Organic+Chemistry+Klein+textbook&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Books", title: "A Brief History of Time — Stephen Hawking",
+    desc: "The classic popular-science book that made cosmology accessible to millions of readers.",
+    price: "~$13", stars: "★★★★★", icon: "🌌", grade: "K-12",
+    url: "https://www.amazon.com/s?k=A+Brief+History+of+Time+Hawking&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Books", title: "The Selfish Gene — Richard Dawkins",
+    desc: "Foundational evolutionary biology — gene-centered view of natural selection, landmark read.",
+    price: "~$15", stars: "★★★★★", icon: "🦎", grade: "High School",
+    url: "https://www.amazon.com/s?k=The+Selfish+Gene+Dawkins&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Books", title: "AP Chemistry Rapid Review — Barron's",
+    desc: "Fast-track AP Chemistry review with targeted practice and full-length exam.",
+    price: "~$19", stars: "★★★★☆", icon: "📙", grade: "High School",
+    url: "https://www.amazon.com/s?k=Barron%27s+AP+Chemistry&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Books", title: "National Audubon Society Field Guides",
+    desc: "Perfect companion for earth science and biology — identify rocks, birds, insects, and plants.",
+    price: "~$22", stars: "★★★★★", icon: "🦅", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Audubon+Society+field+guide&tag=toppicksmar03-20"
+  },
+
+  /* ── CALCULATORS & MATH TOOLS ────────────────────────────── */
+  {
+    category: "Calculators", title: "TI-84 Plus CE Graphing Calculator",
+    desc: "The standard for SAT, ACT, and AP exams. Required for most high school math courses.",
+    price: "~$116", stars: "★★★★★", icon: "🖩", grade: "K-12",
+    url: "https://www.amazon.com/s?k=TI-84+Plus+CE+graphing+calculator&tag=toppicksmar03-20"
+  },
+  {
+    category: "Calculators", title: "Casio fx-991EX Scientific Calculator",
+    desc: "Natural display, spreadsheet mode, and statistics. Best value scientific calculator available.",
+    price: "~$23", stars: "★★★★★", icon: "🔢", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Casio+fx-991EX+scientific+calculator&tag=toppicksmar03-20"
+  },
+  {
+    category: "Calculators", title: "TI-Nspire CX II CAS Graphing Calculator",
+    desc: "Computer Algebra System for AP Calculus BC, college math, and engineering courses.",
+    price: "~$160", stars: "★★★★★", icon: "🖩", grade: "College",
+    url: "https://www.amazon.com/s?k=TI-Nspire+CX+II+CAS&tag=toppicksmar03-20"
+  },
+  {
+    category: "Calculators", title: "Geometry Set — Compass & Protractor",
+    desc: "Stainless-steel compass, protractor, ruler, and set square for geometric constructions.",
     price: "~$13", stars: "★★★★☆", icon: "📐", grade: "K-12",
     url: "https://www.amazon.com/s?k=student+geometry+set+compass+protractor&tag=toppicksmar03-20"
   },
   {
+    category: "Calculators", title: "Fraction Tiles Manipulative Set",
+    desc: "Color-coded fraction bars for visual learning — essential for elementary and middle school.",
+    price: "~$16", stars: "★★★★★", icon: "🟦", grade: "K-5",
+    url: "https://www.amazon.com/s?k=fraction+tiles+manipulative+set&tag=toppicksmar03-20"
+  },
+  {
+    category: "Calculators", title: "Algebra Tiles Set",
+    desc: "Hands-on algebra tiles for modeling equations, factoring, and polynomials visually.",
+    price: "~$18", stars: "★★★★☆", icon: "🟩", grade: "Middle School",
+    url: "https://www.amazon.com/s?k=algebra+tiles+set+student&tag=toppicksmar03-20"
+  },
+
+  /* ── SCIENCE KITS & EXPERIMENTS ──────────────────────────── */
+  {
+    category: "Science Kits", title: "Thames & Kosmos Chemistry C3000 Set",
+    desc: "Over 300 experiments covering crystals, electrolysis, acids & bases, and more. Ages 12+.",
+    price: "~$80", stars: "★★★★★", icon: "⚗️", grade: "Middle School",
+    url: "https://www.amazon.com/s?k=Thames+Kosmos+Chemistry+C3000&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "National Geographic Science Lab Kit",
+    desc: "Complete science lab for kids — rocks, crystals, magnets, chemistry, and more in one box.",
+    price: "~$40", stars: "★★★★☆", icon: "🔬", grade: "K-5",
+    url: "https://www.amazon.com/s?k=National+Geographic+science+lab+kit+kids&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "AmScope Student Compound Microscope",
+    desc: "40x–1000x microscope with slides and cover slips — ideal for biology and cell study.",
+    price: "~$55", stars: "★★★★★", icon: "🔬", grade: "Middle School",
+    url: "https://www.amazon.com/s?k=AmScope+student+compound+microscope&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Dissection Kit — Biology Lab Set",
+    desc: "Stainless-steel scalpel, scissors, forceps, and probes in a reusable pouch. AP Bio essential.",
+    price: "~$15", stars: "★★★★★", icon: "🔪", grade: "High School",
+    url: "https://www.amazon.com/s?k=dissection+kit+biology+lab&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Crystal Growing Science Kit",
+    desc: "Grow vibrant crystal formations while learning about supersaturation and molecular structure.",
+    price: "~$22", stars: "★★★★★", icon: "💎", grade: "K-5",
+    url: "https://www.amazon.com/s?k=crystal+growing+science+kit&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Snap Circuits Electronics Kit",
+    desc: "Build 300+ working electronic projects without soldering. Physics and engineering for beginners.",
+    price: "~$50", stars: "★★★★★", icon: "⚡", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Snap+Circuits+electronics+kit&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "LEGO Mindstorms EV3 Robotics Kit",
+    desc: "Programmable robotics set covering physics, engineering, and coding concepts simultaneously.",
+    price: "~$180", stars: "★★★★★", icon: "🤖", grade: "Middle School",
+    url: "https://www.amazon.com/s?k=LEGO+Mindstorms+robotics+kit&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Rock & Mineral Collection Set (200+ Specimens)",
+    desc: "Labeled rock, mineral, and gemstone specimens for earth science and geology study.",
+    price: "~$35", stars: "★★★★★", icon: "🪨", grade: "K-12",
+    url: "https://www.amazon.com/s?k=rock+mineral+collection+set+students&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Telescope for Beginners — Astronomy Starter",
+    desc: "70mm aperture refractor telescope for viewing moon craters, planets, and star clusters.",
+    price: "~$70", stars: "★★★★☆", icon: "🔭", grade: "K-12",
+    url: "https://www.amazon.com/s?k=beginner+telescope+students+astronomy&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "pH Testing Kit with Litmus Paper",
+    desc: "200-strip pH testing set plus liquid indicators — great for chemistry and environmental labs.",
+    price: "~$10", stars: "★★★★☆", icon: "🧪", grade: "Middle School",
+    url: "https://www.amazon.com/s?k=pH+testing+kit+litmus+paper+students&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Human Anatomy Model Set",
+    desc: "Detailed removable-organ torso model for biology and anatomy study. AP Biology ready.",
+    price: "~$45", stars: "★★★★★", icon: "🫀", grade: "High School",
+    url: "https://www.amazon.com/s?k=human+anatomy+model+biology+students&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Lab Safety Goggles (Anti-Fog)",
+    desc: "ANSI-rated anti-fog chemistry goggles — required for all lab work. Fits over glasses.",
+    price: "~$8", stars: "★★★★★", icon: "🥽", grade: "K-12",
+    url: "https://www.amazon.com/s?k=lab+safety+goggles+anti+fog+chemistry&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Student Lab Coat",
+    desc: "Durable cotton blend lab coat in student sizes. Protects clothing during chemistry experiments.",
+    price: "~$20", stars: "★★★★☆", icon: "🥼", grade: "High School",
+    url: "https://www.amazon.com/s?k=student+lab+coat+chemistry&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Volcano Science Experiment Kit",
+    desc: "Erupting volcano model with included chemicals — classic acid-base reaction for grades 3–7.",
+    price: "~$20", stars: "★★★★☆", icon: "🌋", grade: "K-5",
+    url: "https://www.amazon.com/s?k=volcano+science+experiment+kit+kids&tag=toppicksmar03-20"
+  },
+  {
+    category: "Science Kits", title: "Solar System Model Kit",
+    desc: "Paint-your-own hanging solar system mobile with accurate planet sizing and orbital paths.",
+    price: "~$18", stars: "★★★★★", icon: "🪐", grade: "K-5",
+    url: "https://www.amazon.com/s?k=solar+system+model+kit+students&tag=toppicksmar03-20"
+  },
+
+  /* ── PLANNERS & ORGANIZATION ─────────────────────────────── */
+  {
+    category: "Planners", title: "Undated Student Planner — Academic Year",
+    desc: "Weekly and monthly layout with grade trackers, goal pages, and assignment logs. No wasted pages.",
+    price: "~$18", stars: "★★★★★", icon: "📅", grade: "K-12",
+    url: "https://www.amazon.com/s?k=student+academic+planner+undated&tag=toppicksmar03-20"
+  },
+  {
+    category: "Planners", title: "Passion Planner Academic (Weekly)",
+    desc: "Intentional weekly planner with goal-mapping and reflection spaces for serious students.",
+    price: "~$30", stars: "★★★★★", icon: "🗓️", grade: "High School",
+    url: "https://www.amazon.com/s?k=Passion+Planner+academic+student&tag=toppicksmar03-20"
+  },
+  {
+    category: "Planners", title: "Five Star Student Planner",
+    desc: "Classic school planner with monthly tabs, homework tracker, and durable cover. Grades 6–12.",
+    price: "~$12", stars: "★★★★☆", icon: "⭐", grade: "Middle School",
+    url: "https://www.amazon.com/s?k=Five+Star+student+planner&tag=toppicksmar03-20"
+  },
+  {
+    category: "Planners", title: "Bullet Journal — Leuchtturm1917 Dotted",
+    desc: "The most popular bullet journal notebook — numbered pages, table of contents, smooth paper.",
+    price: "~$25", stars: "★★★★★", icon: "📓", grade: "High School",
+    url: "https://www.amazon.com/s?k=Leuchtturm1917+dotted+notebook&tag=toppicksmar03-20"
+  },
+  {
+    category: "Planners", title: "Desk Organizer — Multi-Compartment",
+    desc: "Bamboo or acrylic desktop organizer for pens, rulers, sticky notes, and small supplies.",
+    price: "~$20", stars: "★★★★★", icon: "🗂️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=desk+organizer+student+multi+compartment&tag=toppicksmar03-20"
+  },
+  {
+    category: "Planners", title: "Large Dry-Erase Monthly Wall Calendar",
+    desc: "Giant reusable whiteboard calendar — plan deadlines, exams, and assignments at a glance.",
+    price: "~$18", stars: "★★★★★", icon: "📆", grade: "K-12",
+    url: "https://www.amazon.com/s?k=dry+erase+monthly+wall+calendar+large&tag=toppicksmar03-20"
+  },
+  {
+    category: "Planners", title: "Homework Planner Pad — Daily Checklist",
+    desc: "Tear-off daily homework tracker pads — one page per day, subject-by-subject layout.",
+    price: "~$10", stars: "★★★★☆", icon: "✅", grade: "K-12",
+    url: "https://www.amazon.com/s?k=homework+planner+pad+daily+checklist&tag=toppicksmar03-20"
+  },
+
+  /* ── STATIONERY & WRITING ─────────────────────────────────── */
+  {
+    category: "Stationery", title: "Zebra Mechanical Pencil Set (0.5mm)",
+    desc: "Smooth, smudge-free mechanical pencils — the preferred tool for math and standardized tests.",
+    price: "~$12", stars: "★★★★★", icon: "✏️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Zebra+mechanical+pencil+0.5mm&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Staedtler Triplus Fineliner Pens (20 colors)",
+    desc: "Color-coded note-taking pens — ideal for Cornell notes, mind maps, and diagram labeling.",
+    price: "~$18", stars: "★★★★★", icon: "🖊️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Staedtler+Triplus+Fineliner+pens&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Mildliner Highlighter Set (25 colors)",
+    desc: "Zebra's pastel double-ended highlighters — gentle on eyes, won't bleed through pages.",
+    price: "~$22", stars: "★★★★★", icon: "🖍️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Zebra+Mildliner+highlighter+set&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Graph Paper Notebook (5x5 quad rule)",
+    desc: "80-sheet quad-ruled notebook — essential for graphing functions, drawing circuits, and lab reports.",
+    price: "~$9", stars: "★★★★★", icon: "📈", grade: "K-12",
+    url: "https://www.amazon.com/s?k=graph+paper+notebook+quad+ruled+student&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Composition Notebooks 12-Pack",
+    desc: "Classic wide-ruled composition books for class notes — bulk value for the full school year.",
+    price: "~$20", stars: "★★★★☆", icon: "📓", grade: "K-12",
+    url: "https://www.amazon.com/s?k=composition+notebook+12+pack+wide+ruled&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Avery 5-Tab Binder Dividers (10-pack)",
+    desc: "Color-coded reinforced dividers for organizing binders by subject — with sticky labels.",
+    price: "~$10", stars: "★★★★★", icon: "📂", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Avery+5+tab+binder+dividers&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Post-it Super Sticky Notes (10 pads)",
+    desc: "Extra-sticky notes that stay on textbook pages and walls — perfect for flagging key concepts.",
+    price: "~$14", stars: "★★★★★", icon: "🟡", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Post-it+Super+Sticky+Notes+pack&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Index Cards — 4x6 Ruled (500 count)",
+    desc: "The backbone of any flashcard system. Ruled 4x6 is the best size for Feynman-method review.",
+    price: "~$10", stars: "★★★★★", icon: "🃏", grade: "K-12",
+    url: "https://www.amazon.com/s?k=index+cards+4x6+ruled+500+count&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Lab Notebook — Carbonless Copy",
+    desc: "Sewn-bound carbonless duplicate lab notebook — required for AP and college chemistry labs.",
+    price: "~$20", stars: "★★★★★", icon: "🧾", grade: "High School",
+    url: "https://www.amazon.com/s?k=carbonless+lab+notebook+chemistry+students&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Staples Heavy Duty 3-Ring Binder (2-inch)",
+    desc: "Durable D-ring binder that holds 540 sheets — keep a full semester of notes organized.",
+    price: "~$10", stars: "★★★★☆", icon: "📁", grade: "K-12",
+    url: "https://www.amazon.com/s?k=heavy+duty+3+ring+binder+2+inch&tag=toppicksmar03-20"
+  },
+  {
+    category: "Stationery", title: "Karin Brushmarker PRO Watercolor Pens",
+    desc: "Brilliant watercolor markers for scientific diagrams, biology drawings, and study art.",
+    price: "~$35", stars: "★★★★★", icon: "🎨", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Karin+Brushmarker+PRO+watercolor+markers&tag=toppicksmar03-20"
+  },
+
+  /* ── TECHNOLOGY ───────────────────────────────────────────── */
+  {
+    category: "Technology", title: "Apple iPad (Latest Gen) for Students",
+    desc: "Ideal for annotating PDFs, Desmos graphing, Khan Academy, and digital note-taking.",
+    price: "~$329", stars: "★★★★★", icon: "📱", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Apple+iPad+student+latest&tag=toppicksmar03-20"
+  },
+  {
+    category: "Technology", title: "Apple Pencil (1st Generation)",
+    desc: "Perfect for handwriting math on iPad, annotating textbook PDFs, and diagram drawing.",
+    price: "~$89", stars: "★★★★★", icon: "✏️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Apple+Pencil+1st+generation&tag=toppicksmar03-20"
+  },
+  {
     category: "Technology", title: "Sony WH-1000XM5 Noise-Canceling Headphones",
-    desc: "Stay focused during study sessions with industry-leading active noise cancellation.",
+    desc: "Industry-leading ANC headphones — block distractions during study for measurable focus gains.",
     price: "~$348", stars: "★★★★★", icon: "🎧", grade: "K-12",
     url: "https://www.amazon.com/s?k=Sony+WH-1000XM5+headphones&tag=toppicksmar03-20"
+  },
+  {
+    category: "Technology", title: "Anker USB-C Hub (7-in-1)",
+    desc: "Expand your laptop with HDMI, USB-A, SD card, and PD charging — essential for school setups.",
+    price: "~$30", stars: "★★★★★", icon: "🔌", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Anker+USB+C+hub+7+in+1&tag=toppicksmar03-20"
+  },
+  {
+    category: "Technology", title: "Wacom Intuos Drawing Tablet",
+    desc: "Pen tablet for digital note-taking, diagram creation, and online tutoring. Works with any laptop.",
+    price: "~$80", stars: "★★★★★", icon: "🖊️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Wacom+Intuos+drawing+tablet+student&tag=toppicksmar03-20"
+  },
+  {
+    category: "Technology", title: "Portable Laptop Stand — Adjustable Aluminum",
+    desc: "Raises screen to ergonomic eye level, reducing neck strain during long study sessions.",
+    price: "~$25", stars: "★★★★★", icon: "💻", grade: "K-12",
+    url: "https://www.amazon.com/s?k=adjustable+aluminum+laptop+stand&tag=toppicksmar03-20"
+  },
+  {
+    category: "Technology", title: "Blue Light Blocking Glasses",
+    desc: "Reduce eye strain and improve sleep quality when studying on screens late at night.",
+    price: "~$17", stars: "★★★★☆", icon: "👓", grade: "K-12",
+    url: "https://www.amazon.com/s?k=blue+light+blocking+glasses+student&tag=toppicksmar03-20"
+  },
+  {
+    category: "Technology", title: "Anker Portable Charger 20,000mAh",
+    desc: "Charge laptop, tablet, and phone during long school days — no hunting for outlets.",
+    price: "~$40", stars: "★★★★★", icon: "🔋", grade: "K-12",
+    url: "https://www.amazon.com/s?k=Anker+portable+charger+20000mAh&tag=toppicksmar03-20"
+  },
+  {
+    category: "Technology", title: "HP LaserJet Printer (Wireless)",
+    desc: "Fast, affordable laser printer for assignments, handouts, and flashcards at home.",
+    price: "~$180", stars: "★★★★★", icon: "🖨️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=HP+LaserJet+wireless+printer+home+student&tag=toppicksmar03-20"
+  },
+  {
+    category: "Technology", title: "Logitech MX Keys Mini Keyboard",
+    desc: "Compact wireless keyboard for comfortable typing on papers, essays, and code projects.",
+    price: "~$100", stars: "★★★★★", icon: "⌨️", grade: "High School",
+    url: "https://www.amazon.com/s?k=Logitech+MX+Keys+Mini&tag=toppicksmar03-20"
+  },
+
+  /* ── STUDY SETUP & ERGONOMICS ─────────────────────────────── */
+  {
+    category: "Study Setup", title: "BenQ LED Desk Lamp with USB Charging",
+    desc: "Adjustable color temperature and brightness — eye-care certified for extended study sessions.",
+    price: "~$40", stars: "★★★★★", icon: "💡", grade: "K-12",
+    url: "https://www.amazon.com/s?k=BenQ+LED+desk+lamp+USB+charging&tag=toppicksmar03-20"
+  },
+  {
+    category: "Study Setup", title: "Dry-Erase Lap Board (12x18)",
+    desc: "Personal mini whiteboard for working math problems, practicing formulas, and self-quizzing.",
+    price: "~$12", stars: "★★★★★", icon: "🖊️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=dry+erase+lap+board+student+whiteboard&tag=toppicksmar03-20"
+  },
+  {
+    category: "Study Setup", title: "Large Magnetic Whiteboard (48x36)",
+    desc: "Full-size wall whiteboard for working through problems, outlining essays, and visual planning.",
+    price: "~$60", stars: "★★★★★", icon: "📋", grade: "K-12",
+    url: "https://www.amazon.com/s?k=large+magnetic+whiteboard+48x36&tag=toppicksmar03-20"
+  },
+  {
+    category: "Study Setup", title: "Pomodoro Timer — Mechanical Kitchen Timer",
+    desc: "No-battery mechanical timer for Pomodoro study technique — 25 min on, 5 min break.",
+    price: "~$12", stars: "★★★★★", icon: "⏱️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=pomodoro+timer+mechanical+study&tag=toppicksmar03-20"
+  },
+  {
+    category: "Study Setup", title: "Ergonomic Seat Cushion — Memory Foam",
+    desc: "Pressure-relief seat cushion for long study sessions on hard classroom or desk chairs.",
+    price: "~$30", stars: "★★★★☆", icon: "🪑", grade: "K-12",
+    url: "https://www.amazon.com/s?k=ergonomic+memory+foam+seat+cushion+student&tag=toppicksmar03-20"
+  },
+  {
+    category: "Study Setup", title: "Book Stand — Adjustable Reading Holder",
+    desc: "Freestanding adjustable book stand for reading textbooks hands-free while taking notes.",
+    price: "~$15", stars: "★★★★★", icon: "📖", grade: "K-12",
+    url: "https://www.amazon.com/s?k=adjustable+book+stand+reading+holder&tag=toppicksmar03-20"
+  },
+  {
+    category: "Study Setup", title: "Noise Machine — White Noise for Focus",
+    desc: "Portable white/brown noise machine blocks ambient sound better than music for deep study.",
+    price: "~$35", stars: "★★★★★", icon: "🔊", grade: "K-12",
+    url: "https://www.amazon.com/s?k=white+noise+machine+study+focus&tag=toppicksmar03-20"
+  },
+  {
+    category: "Study Setup", title: "Backpack — High School / College Student",
+    desc: "Water-resistant 40L backpack with padded laptop sleeve, organizer pockets, and USB port.",
+    price: "~$45", stars: "★★★★★", icon: "🎒", grade: "K-12",
+    url: "https://www.amazon.com/s?k=student+backpack+laptop+sleeve+high+school&tag=toppicksmar03-20"
+  },
+
+  /* ── POSTERS & REFERENCE DISPLAYS ────────────────────────── */
+  {
+    category: "Posters", title: "Periodic Table of Elements Poster (24x36)",
+    desc: "High-resolution laminated periodic table with atomic weights, electron configs, and color coding.",
+    price: "~$10", stars: "★★★★★", icon: "🗺️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=periodic+table+of+elements+poster+laminated&tag=toppicksmar03-20"
+  },
+  {
+    category: "Posters", title: "Human Body Systems Anatomy Poster Set",
+    desc: "6-poster set covering skeletal, muscular, nervous, circulatory, digestive, and respiratory systems.",
+    price: "~$18", stars: "★★★★★", icon: "🫁", grade: "High School",
+    url: "https://www.amazon.com/s?k=human+body+systems+anatomy+poster+set&tag=toppicksmar03-20"
+  },
+  {
+    category: "Posters", title: "World Map + US Map Laminated Poster",
+    desc: "Double-sided laminated maps with country names, capitals, and geographic features. Geography essential.",
+    price: "~$12", stars: "★★★★★", icon: "🗺️", grade: "K-12",
+    url: "https://www.amazon.com/s?k=laminated+world+map+poster+students&tag=toppicksmar03-20"
+  },
+  {
+    category: "Posters", title: "Math Formulas Reference Poster Set",
+    desc: "Set of 6 posters: algebra, geometry, trig, calculus, stats, and number theory. Laminated.",
+    price: "~$15", stars: "★★★★☆", icon: "📐", grade: "K-12",
+    url: "https://www.amazon.com/s?k=math+formulas+reference+poster+laminated+set&tag=toppicksmar03-20"
+  },
+  {
+    category: "Posters", title: "Solar System Space Poster Set",
+    desc: "NASA-image quality astronomy posters with planet facts, deep space objects, and the Milky Way.",
+    price: "~$14", stars: "★★★★★", icon: "🌌", grade: "K-12",
+    url: "https://www.amazon.com/s?k=solar+system+astronomy+poster+set+NASA&tag=toppicksmar03-20"
   }
 ];
