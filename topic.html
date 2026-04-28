@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topic | Xpelion Academy</title>
+  <meta name="description" content="In-depth tutorials with worked examples and module quizzes on Xpelion Academy.">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* Extra topic-page styles */
+    .next-prev {
+      display: flex; justify-content: space-between; gap: 16px;
+      margin-top: 32px; padding-top: 24px;
+      border-top: 1.5px solid var(--color-border);
+    }
+    .nav-lesson-btn {
+      display: flex; align-items: center; gap: 10px;
+      padding: 14px 20px;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-size: .875rem; font-weight: 500;
+      color: var(--color-text);
+      transition: all var(--transition);
+      cursor: pointer; flex: 1;
+      background: var(--color-bg-card);
+    }
+    .nav-lesson-btn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+    .nav-lesson-btn.next { justify-content: flex-end; text-align: right; }
+    .related-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px; margin-top: 20px;
+    }
+    .related-card {
+      padding: 18px; background: white;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      text-decoration: none; display: block;
+      transition: all var(--transition);
+    }
+    .related-card:hover { border-color: var(--color-primary); transform: translateY(-2px); }
+    .related-card h5 { margin-bottom: 4px; font-size: .875rem; }
+    .related-card p  { font-size: .78rem; }
+    .sticky-progress {
+      position: sticky; top: calc(var(--nav-h) + 12px);
+      background: white; border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-lg); overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">X</div>Xpelion Academy</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="math.html">Mathematics</a>
+      <a href="science.html">Science</a>
+      <a href="handouts.html">Handouts</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="navSearchInput" placeholder="Search topics…" aria-label="Search">
+    </div>
+    <a href="search.html" class="nav-cta">Explore →</a>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="math.html">Mathematics</a><a href="science.html">Science</a>
+  <a href="handouts.html">Handouts</a><a href="resources.html">Resources</a><a href="search.html">Search</a>
+</div>
+
+<main style="padding-top: var(--nav-h);">
+  <div class="container" style="padding-top: 32px; padding-bottom: 64px;">
+
+    <!-- Breadcrumb (populated by JS) -->
+    <div class="breadcrumb" id="breadcrumb"></div>
+
+    <div class="lesson-layout">
+      <!-- Sidebar -->
+      <aside class="sticky-progress" id="lessonSidebar">
+        <div style="padding:20px;text-align:center;color:var(--color-faint);">Loading…</div>
+      </aside>
+
+      <!-- Main lesson content -->
+      <div>
+        <div class="lesson-content" id="lessonContent">
+          <div style="padding:48px;text-align:center;">
+            <div style="font-size:2.5rem;margin-bottom:16px;">📚</div>
+            <h3>Loading lesson…</h3>
+            <p>If content doesn't appear, check that you navigated here from a subject page.</p>
+          </div>
+        </div>
+
+        <!-- Next / Prev navigation (populated by JS) -->
+        <div class="next-prev" id="moduleNav"></div>
+
+        <!-- Related subjects -->
+        <div style="margin-top:40px;">
+          <h3 style="margin-bottom:4px;">Continue Learning</h3>
+          <p style="font-size:.875rem;margin-bottom:16px;">Other subjects you might enjoy</p>
+          <div class="related-grid" id="relatedGrid"></div>
+        </div>
+
+        <!-- Ad slot placeholder -->
+        <div style="margin-top:32px;padding:20px;background:var(--color-bg-alt);border:1.5px dashed var(--color-border);border-radius:var(--radius-md);text-align:center;color:var(--color-faint);font-size:.8rem;">
+          Advertisement — <a href="#" style="color:var(--color-primary);">Become a sponsor</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo"><div class="logo-icon">X</div>Xpelion Academy</div>
+        <p>Free, in-depth math and science education for every student.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Mathematics</h5>
+        <a href="topic.html?domain=math&subject=arithmetic">Arithmetic</a>
+        <a href="topic.html?domain=math&subject=algebra1">Algebra</a>
+        <a href="topic.html?domain=math&subject=calculus">Calculus</a>
+        <a href="topic.html?domain=math&subject=statistics">Statistics</a>
+      </div>
+      <div class="footer-col">
+        <h5>Science</h5>
+        <a href="topic.html?domain=science&subject=physics-mechanics">Physics</a>
+        <a href="topic.html?domain=science&subject=chemistry">Chemistry</a>
+        <a href="topic.html?domain=science&subject=biology">Biology</a>
+      </div>
+      <div class="footer-col">
+        <h5>More</h5>
+        <a href="handouts.html">Handouts</a>
+        <a href="resources.html">Resources</a>
+        <a href="search.html">Search</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Xpelion Academy · xpelion.com</span>
+      <div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Affiliate Disclosure</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/content.js"></script>
+<script src="js/app.js"></script>
+<script>
+// Extend app.js topic page with next/prev and related modules
+document.addEventListener('DOMContentLoaded', () => {
+  const params  = new URLSearchParams(window.location.search);
+  const domain  = params.get('domain');
+  const sid     = params.get('subject');
+  const mid     = params.get('module');
+  const subject = XA[domain]?.[sid];
+  if (!subject) return;
+
+  // Next / Prev
+  const modules = subject.modules || [];
+  const idx = modules.findIndex(m => m.id === (mid || modules[0]?.id));
+  const nav = document.getElementById('moduleNav');
+  if (nav) {
+    nav.innerHTML = `
+      ${idx > 0 ? `<button class="nav-lesson-btn" onclick="loadModule('${domain}','${sid}','${modules[idx-1].id}')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        <div><div style="font-size:.72rem;color:var(--color-faint);text-transform:uppercase;letter-spacing:.06em;">Previous</div>${modules[idx-1].title}</div>
+      </button>` : '<div></div>'}
+      ${idx < modules.length - 1 ? `<button class="nav-lesson-btn next" onclick="loadModule('${domain}','${sid}','${modules[idx+1].id}')">
+        <div><div style="font-size:.72rem;color:var(--color-faint);text-transform:uppercase;letter-spacing:.06em;">Next</div>${modules[idx+1].title}</div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>` : '<div></div>'}`;
+  }
+
+  // Related subjects
+  const related = document.getElementById('relatedGrid');
+  if (related) {
+    const others = Object.values(XA[domain] || {}).filter(s => s.id !== sid).slice(0, 4);
+    related.innerHTML = others.map(s => `
+      <a href="topic.html?domain=${domain}&subject=${s.id}" class="related-card">
+        <div style="font-size:1.3rem;margin-bottom:6px;">${s.icon}</div>
+        <h5>${s.title}</h5>
+        <p>${s.level}</p>
+      </a>`).join('');
+  }
+});
+</script>
+</body>
+</html>

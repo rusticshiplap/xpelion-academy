@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xpelion Academy — Learn Math & Science, Mastered</title>
+  <meta name="description" content="Xpelion Academy offers free, in-depth math and science tutorials for K-12 and college students. Covering algebra, calculus, chemistry, physics, biology, and more — with example problems, quizzes, and cheatsheets.">
+  <meta name="keywords" content="math tutorials, science tutorials, algebra, calculus, chemistry, physics, biology, free education, K-12, college">
+  <meta property="og:title" content="Xpelion Academy — Learn Math & Science, Mastered">
+  <meta property="og:description" content="Free in-depth tutorials covering all branches of math and science, with quizzes, examples, and cheatsheets.">
+  <meta property="og:url" content="https://xpelion.com">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://xpelion.com/">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Google AdSense placeholder -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Xpelion Academy",
+    "url": "https://xpelion.com",
+    "description": "Free in-depth math and science tutorials for K-12 and college students"
+  }
+  </script>
+</head>
+<body>
+
+<!-- ── NAV ───────────────────────────────────────────────── -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">X</div>
+      Xpelion Academy
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="math.html">Mathematics</a>
+      <a href="science.html">Science</a>
+      <a href="handouts.html">Handouts</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="navSearchInput" placeholder="Search topics…" aria-label="Search topics">
+    </div>
+    <a href="search.html" class="nav-cta">Explore →</a>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="math.html">Mathematics</a>
+  <a href="science.html">Science</a>
+  <a href="handouts.html">Handouts & Cheatsheets</a>
+  <a href="resources.html">Books & Tools</a>
+  <a href="search.html">Search</a>
+</div>
+
+<!-- ── HERO ───────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-badge fade-up"><span class="dot"></span> Free for all students</div>
+    <h1 class="fade-up fade-up-d1">Master <span>Math & Science</span><br>From First Principles</h1>
+    <p class="fade-up fade-up-d2">Xpelion Academy breaks every concept down to its core — with clear explanations, worked examples, and module quizzes so you can track real progress.</p>
+    <div class="hero-search fade-up fade-up-d3">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="heroSearchInput" placeholder="Search any topic — algebra, cell biology, thermodynamics…" aria-label="Search topics">
+      <button id="heroSearchBtn">Search</button>
+    </div>
+    <div class="hero-stats fade-up fade-up-d3">
+      <div class="hero-stat"><strong>30+</strong> Math Subjects</div>
+      <div class="hero-stat"><strong>15+</strong> Science Disciplines</div>
+      <div class="hero-stat"><strong>100+</strong> Modules</div>
+      <div class="hero-stat"><strong>K–College</strong> All Levels</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHAT WE COVER ──────────────────────────────────────── -->
+<section class="section" style="background:white;">
+  <div class="container">
+    <div class="section-header center" style="text-align:center;">
+      <div class="section-tag">Curriculum</div>
+      <h2>Everything You Need, One Place</h2>
+      <p>From arithmetic to real analysis, from cell biology to quantum mechanics — organized by discipline, level, and learning objective.</p>
+    </div>
+
+    <div class="tabs" style="margin:0 auto 32px;">
+      <button class="tab-btn active" data-tab="math-tab">Mathematics</button>
+      <button class="tab-btn" data-tab="sci-tab">Science</button>
+    </div>
+
+    <div class="tab-container">
+      <div class="tab-panel active" data-panel="math-tab">
+        <div class="topics-grid" id="mathPreview"></div>
+        <div style="text-align:center;margin-top:32px;">
+          <a href="math.html" class="btn btn-primary">All Math Subjects →</a>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="sci-tab">
+        <div class="topics-grid" id="sciPreview"></div>
+        <div style="text-align:center;margin-top:32px;">
+          <a href="science.html" class="btn btn-primary">All Science Subjects →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ───────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center" style="text-align:center;">
+      <div class="section-tag">Method</div>
+      <h2>How Xpelion Works</h2>
+      <p>A structured, proven approach to mastering difficult concepts.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:48px;">
+      <div style="text-align:center;padding:32px 24px;background:white;border:1.5px solid var(--color-border);border-radius:var(--radius-lg);">
+        <div style="font-size:2.5rem;margin-bottom:16px;">🎯</div>
+        <h4>1. Choose a Topic</h4>
+        <p style="font-size:.875rem;">Browse by subject, grade level, or use search to jump straight to what you need.</p>
+      </div>
+      <div style="text-align:center;padding:32px 24px;background:white;border:1.5px solid var(--color-border);border-radius:var(--radius-lg);">
+        <div style="font-size:2.5rem;margin-bottom:16px;">📖</div>
+        <h4>2. Learn the Concepts</h4>
+        <p style="font-size:.875rem;">Read clear explanations with diagrams, formulas, and real-world analogies — no jargon without definitions.</p>
+      </div>
+      <div style="text-align:center;padding:32px 24px;background:white;border:1.5px solid var(--color-border);border-radius:var(--radius-lg);">
+        <div style="font-size:2.5rem;margin-bottom:16px;">✏️</div>
+        <h4>3. Work Examples</h4>
+        <p style="font-size:.875rem;">Every concept comes with fully worked examples showing step-by-step reasoning.</p>
+      </div>
+      <div style="text-align:center;padding:32px 24px;background:white;border:1.5px solid var(--color-border);border-radius:var(--radius-lg);">
+        <div style="font-size:2.5rem;margin-bottom:16px;">📝</div>
+        <h4>4. Take the Quiz</h4>
+        <p style="font-size:.875rem;">Test your understanding with module quizzes. Score 70%+ to mark modules complete and track progress.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── QUICK LINKS ─────────────────────────────────────────── -->
+<section class="section" style="background:white;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+      <a href="handouts.html" style="display:block;padding:36px;background:linear-gradient(135deg,#eef2ff,#f5f3ff);border:1.5px solid #c7d2fe;border-radius:var(--radius-lg);text-decoration:none;">
+        <div style="font-size:2.5rem;margin-bottom:16px;">📄</div>
+        <h3>Free Handouts & Cheatsheets</h3>
+        <p style="margin-top:8px;">Download printable formula sheets, reference cards, and study guides for every major subject.</p>
+        <span class="btn btn-primary" style="margin-top:20px;display:inline-flex;">Browse Handouts →</span>
+      </a>
+      <a href="resources.html" style="display:block;padding:36px;background:linear-gradient(135deg,#fff7ed,#fef9c3);border:1.5px solid #fed7aa;border-radius:var(--radius-lg);text-decoration:none;">
+        <div style="font-size:2.5rem;margin-bottom:16px;">📚</div>
+        <h3>Books, Calculators & Tech</h3>
+        <p style="margin-top:8px;">Curated Amazon recommendations for the best textbooks, graphing calculators, and study tools for K-12.</p>
+        <span class="btn btn-primary" style="margin-top:20px;display:inline-flex;background:linear-gradient(135deg,#f59e0b,#d97706);">Shop Resources →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo"><div class="logo-icon" style="background:var(--grad-math);">X</div>Xpelion Academy</div>
+        <p>Free, in-depth math and science education for every student — from kindergarten to college.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Mathematics</h5>
+        <a href="topic.html?domain=math&subject=arithmetic">Arithmetic</a>
+        <a href="topic.html?domain=math&subject=algebra1">Algebra</a>
+        <a href="topic.html?domain=math&subject=geometry">Geometry</a>
+        <a href="topic.html?domain=math&subject=calculus">Calculus</a>
+        <a href="topic.html?domain=math&subject=statistics">Statistics</a>
+        <a href="math.html">All Subjects →</a>
+      </div>
+      <div class="footer-col">
+        <h5>Science</h5>
+        <a href="topic.html?domain=science&subject=physics-mechanics">Physics</a>
+        <a href="topic.html?domain=science&subject=chemistry">Chemistry</a>
+        <a href="topic.html?domain=science&subject=biology">Biology</a>
+        <a href="topic.html?domain=science&subject=astronomy">Astronomy</a>
+        <a href="topic.html?domain=science&subject=earth-science">Earth Science</a>
+        <a href="science.html">All Subjects →</a>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="handouts.html">Handouts & Cheatsheets</a>
+        <a href="resources.html">Books & Tools</a>
+        <a href="search.html">Search</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Xpelion Academy · xpelion.com · All rights reserved.</span>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Affiliate Disclosure</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/content.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
