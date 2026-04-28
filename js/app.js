@@ -412,7 +412,7 @@ function initResourcesPage() {
           <span class="price">${r.price}</span>
           <span class="stars">${r.stars}</span>
         </div>
-        <a href="https://www.amazon.com/dp/${r.asin}?tag=xpelion-20"
+        <a href="https://www.amazon.com/dp/${r.asin}?tag=toppicksmar03-20"
            target="_blank" rel="noopener sponsored" class="amazon-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" opacity="0"/><path d="M7 10l5 5 5-5z"/></svg>
           View on Amazon
