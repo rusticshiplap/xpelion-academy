@@ -3,6 +3,12 @@
    Navigation, search, progress tracking, quiz engine
    ============================================================ */
 
+import apiClient from './api-client.js';
+import { initAuthUI } from './auth.js';
+
+// Initialize auth UI
+document.addEventListener('DOMContentLoaded', initAuthUI);
+
 /* ── NAV SCROLL BEHAVIOR ─────────────────────────────────── */
 (function() {
   const nav = document.getElementById('nav');
@@ -55,11 +61,11 @@ const Progress = {
   set(data) {
     try { localStorage.setItem(this.key, JSON.stringify(data)); } catch {}
   },
-  markDone(domain, subjectId, moduleId) {
+  markDone(domain, subjectId, moduleId, quizScore = 100) {
     const d = this.get();
     if (!d[domain]) d[domain] = {};
     if (!d[domain][subjectId]) d[domain][subjectId] = {};
-    d[domain][subjectId][moduleId] = { done: true, ts: Date.now() };
+    d[domain][subjectId][moduleId] = { done: true, score: quizScore, ts: Date.now() };
     this.set(d);
   },
   isDone(domain, subjectId, moduleId) {
@@ -142,15 +148,31 @@ function initQuizzes() {
 
     const submitBtn = section.querySelector('.quiz-btn');
     if (submitBtn) {
-      submitBtn.addEventListener('click', () => {
+      submitBtn.addEventListener('click', async () => {
         showResult(section, score, questions.length);
         const domain = submitBtn.dataset.domain;
         const subject = submitBtn.dataset.subject;
         const module  = submitBtn.dataset.module;
-        if (domain && subject && module && score / questions.length >= 0.7) {
-          Progress.markDone(domain, subject, module);
+        const quizScore = Math.round((score / questions.length) * 100);
+
+        if (domain && subject && module) {
+          // Always save to localStorage for offline support
+          Progress.markDone(domain, subject, module, quizScore);
           const bar = document.querySelector(`[data-module="${module}"] .progress-fill`);
           if (bar) bar.style.width = '100%';
+
+          // Sync to backend if authenticated
+          if (apiClient.isAuthenticated()) {
+            try {
+              const answers = Array.from(questions).map((q, i) => {
+                const selected = q.querySelector('.quiz-option.selected');
+                return selected ? Array.from(q.querySelectorAll('.quiz-option')).indexOf(selected) : -1;
+              });
+              await apiClient.saveProgress(domain, subject, module, quizScore, answers);
+            } catch (err) {
+              console.error('Failed to sync progress to backend:', err);
+            }
+          }
         }
       });
     }

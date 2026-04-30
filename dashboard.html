@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Xpelion Academy</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body data-page="dashboard">
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">X</div>Xpelion Academy</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="math.html">Mathematics</a>
+      <a href="science.html">Science</a>
+      <a href="handouts.html">Handouts</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <a href="search.html" class="nav-cta">Explore →</a>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="math.html">Mathematics</a><a href="science.html">Science</a>
+  <a href="handouts.html">Handouts</a><a href="resources.html">Resources</a><a href="search.html">Search</a>
+</div>
+
+<!-- Page Hero -->
+<div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);padding:calc(var(--nav-h) + 56px) 0 56px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(255,255,255,.08),transparent);"></div>
+  <div class="container" style="position:relative;">
+    <div class="breadcrumb" style="--color-faint:rgba(255,255,255,.5);">
+      <a href="index.html" style="color:rgba(255,255,255,.7);">Home</a>
+      <span style="color:rgba(255,255,255,.4);">›</span>
+      <span style="color:white;">Dashboard</span>
+    </div>
+    <h1 style="color:white;margin-bottom:14px;">Your Learning Dashboard</h1>
+    <p style="color:rgba(255,255,255,.75);max-width:580px;font-size:1.05rem;">Track your progress, earn certificates, and celebrate your learning wins.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+
+    <!-- Stats -->
+    <div class="stats-grid" id="statsGrid">
+      <div class="stat-card">
+        <div class="stat-value">0%</div>
+        <div class="stat-label">Overall Progress</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Modules Completed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Certificates Earned</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">0 days</div>
+        <div class="stat-label">Learning Streak</div>
+      </div>
+    </div>
+
+    <!-- Domain Progress -->
+    <div class="dashboard-container">
+      <div>
+        <div class="progress-section">
+          <h3>Mathematics Progress</h3>
+          <div id="mathProgress"></div>
+        </div>
+      </div>
+      <div>
+        <div class="progress-section">
+          <h3>Science Progress</h3>
+          <div id="scienceProgress"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="progress-section">
+      <h3>🏆 Certificates & Badges</h3>
+      <div class="certificates-grid" id="certificatesGrid">
+        <p style="color: var(--color-text-muted);">Complete subjects to earn certificates!</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo"><div class="logo-icon">X</div>Xpelion Academy</div>
+        <p>Free, in-depth math and science education for every student.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Dashboard</h5>
+        <a href="dashboard.html">Your Progress</a>
+        <a href="study-groups.html">Study Groups</a>
+      </div>
+      <div class="footer-col">
+        <h5>Learn</h5>
+        <a href="math.html">Mathematics</a>
+        <a href="science.html">Science</a>
+        <a href="search.html">Search</a>
+      </div>
+      <div class="footer-col">
+        <h5>More</h5>
+        <a href="handouts.html">Handouts</a>
+        <a href="resources.html">Resources</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Xpelion Academy · xpelion.com</span>
+      <div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Affiliate Disclosure</a></div>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import apiClient from './js/api-client.js';
+  import { initAuthUI } from './js/auth.js';
+
+  initAuthUI();
+
+  if (!apiClient.isAuthenticated()) {
+    window.location.href = 'index.html';
+  }
+
+  async function loadDashboard() {
+    try {
+      const stats = await apiClient.getStats();
+      const certificates = await apiClient.getCertificates();
+
+      // Update stats
+      document.querySelectorAll('.stat-card').forEach((card, i) => {
+        const values = [
+          stats.completionPercent + '%',
+          stats.completedModules,
+          stats.certificatesEarned,
+          '0 days' // TODO: Calculate streak from database
+        ];
+        const labels = [
+          'Overall Progress',
+          'Modules Completed',
+          'Certificates Earned',
+          'Learning Streak'
+        ];
+        card.innerHTML = `<div class="stat-value">${values[i]}</div><div class="stat-label">${labels[i]}</div>`;
+      });
+
+      // Update domain progress
+      const renderProgress = (domainKey, elementId) => {
+        const domainStats = stats.domainProgress[domainKey];
+        const container = document.getElementById(elementId);
+        if (!domainStats) {
+          container.innerHTML = '<p style="color: var(--color-text-muted);">No progress yet</p>';
+          return;
+        }
+
+        container.innerHTML = `
+          <div class="subject-progress-item">
+            <div class="progress-header">
+              <span>${domainKey.charAt(0).toUpperCase() + domainKey.slice(1)} Progress</span>
+              <span>${domainStats.percent}%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: ${domainStats.percent}%"></div>
+            </div>
+            <p style="margin-top: 8px; font-size: 0.875rem; color: var(--color-text-muted);">
+              ${domainStats.completed} of ${domainStats.total} modules completed
+            </p>
+          </div>
+        `;
+      };
+
+      renderProgress('math', 'mathProgress');
+      renderProgress('science', 'scienceProgress');
+
+      // Update certificates
+      const certificatesContainer = document.getElementById('certificatesGrid');
+      if (certificates.length === 0) {
+        certificatesContainer.innerHTML = '<p style="color: var(--color-text-muted);">Complete subjects to earn certificates!</p>';
+      } else {
+        certificatesContainer.innerHTML = certificates.map(cert => `
+          <div class="certificate-badge" title="${cert.certificate_id}">
+            <img src="${apiClient.getBadgeUrl(cert.certificate_id)}" alt="${cert.certificate_id}">
+            <div class="certificate-badge-name">${cert.certificate_data?.subjectTitle || cert.certificate_id}</div>
+          </div>
+        `).join('');
+      }
+    } catch (err) {
+      console.error('Failed to load dashboard:', err);
+      document.querySelector('main').innerHTML = '<div class="container"><p style="color: red; padding: 40px 0;">Failed to load dashboard</p></div>';
+    }
+  }
+
+  loadDashboard();
+</script>
+
+<script src="js/app.js"></script>
+</body>
+</html>
